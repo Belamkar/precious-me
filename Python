@@ -10,3 +10,23 @@ procedure insertionSort(arr: array of integers)
         arr[j+1] := key
     end for
 end procedure
+
+
+2Q 
+
+Start
+   |
+   V
+Enter the first number
+   |
+   V
+Enter the second number
+   |
+   V
+Multiply the first number by the second number
+   |
+   V
+Display the product
+   |
+   V
+End
