@@ -40,3 +40,88 @@ with open(filename, "w") as file:
 
 print("Vehicle information written to file:", filename)
 
+
+Q1
+
+a. 
+
+numbers = []
+
+# Input the 5 numbers
+for i in range(5):
+    num = int(input("Enter number {}: ".format(i+1)))
+    numbers.append(num)
+
+divisible_by_2_and_11 = True
+
+# Check divisibility for each number
+for num in numbers:
+    if num % 2 != 0 or num % 11 != 0:
+        divisible_by_2_and_11 = False
+        break
+
+# Print the result
+if divisible_by_2_and_11:
+    print("All numbers are divisible by 2 and 11")
+else:
+    print("Not all numbers are divisible by 2 and 11")
+
+
+b.
+
+Divisibility Checker Program
+
+
+User
+Write a program in python to check whether a given 5 numbers are divisible by 2 and 11 or not. 
+a. With/Without using functions
+b. Trace your program 
+
+ChatGPT
+a. Program to check divisibility by 2 and 11 without using functions:
+
+python
+Copy code
+numbers = []
+
+# Input the 5 numbers
+for i in range(5):
+    num = int(input("Enter number {}: ".format(i+1)))
+    numbers.append(num)
+
+divisible_by_2_and_11 = True
+
+# Check divisibility for each number
+for num in numbers:
+    if num % 2 != 0 or num % 11 != 0:
+        divisible_by_2_and_11 = False
+        break
+
+# Print the result
+if divisible_by_2_and_11:
+    print("All numbers are divisible by 2 and 11")
+else:
+    print("Not all numbers are divisible by 2 and 11")
+b. Trace of the program:
+
+Let's trace the program execution with an example:
+
+Enter number 1: 22
+Enter number 2: 33
+Enter number 3: 44
+Enter number 4: 55
+Enter number 5: 66
+
+The user is prompted to enter the first number.
+The user inputs 22.
+The program appends 22 to the numbers list.
+The user is prompted to enter the second number.
+The user inputs 33.
+The program appends 33 to the numbers list.
+Steps 4-6 are repeated for the remaining three numbers.
+The variable divisible_by_2_and_11 is initialized as True.
+The program starts checking divisibility for each number in the numbers list.
+The first number, 22, is divisible by both 2 and 11, so no action is taken.
+The second number, 33, is not divisible by 2. Since the number is not divisible by 2, the variable divisible_by_2_and_11 is set to False, and the loop breaks.
+The program proceeds to prin
+
