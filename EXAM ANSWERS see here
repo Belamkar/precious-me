@@ -16,3 +16,27 @@ print(my_vehicle.get_info())
 
 
 Q3
+
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def get_info(self):
+        return f"Make: {self.make}, Model: {self.model}"
+
+
+# Creating an instance of the Vehicle class
+my_vehicle = Vehicle("Toyota", "Corolla")
+
+# Calling the get_info method to retrieve the make and model of the vehicle
+vehicle_info = my_vehicle.get_info()
+print(vehicle_info)
+
+# Writing the vehicle information to a file
+filename = "vehicle_info.txt"
+with open(filename, "w") as file:
+    file.write(vehicle_info)
+
+print("Vehicle information written to file:", filename)
+
