@@ -1,4 +1,18 @@
 Q2
 
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    
+    def get_info(self):
+        return f"Make: {self.make}, Model: {self.model}"
+    
+# Creating an instance of the Vehicle class
+my_vehicle = Vehicle("Toyota", "Camry")
+
+# Calling the get_info method to display the information
+print(my_vehicle.get_info())
+
 
 Q3
