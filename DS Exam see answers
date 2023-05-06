@@ -1,3 +1,32 @@
 Q1
 
+# Define an empty queue
+queue = []
+
+# Add elements to the queue using the insert() function
+queue.insert(0, 'apple')
+queue.insert(0, 'banana')
+queue.insert(0, 'cherry')
+
+# Display the elements of the queue
+print("Elements of the queue:")
+for element in queue:
+    print(element)
+
+# Remove one element from the front of the queue
+removed_element = queue.pop()
+print("Removed element from the queue:", removed_element)
+
+# Remove two elements from the front of the queue
+removed_elements = queue[:2]
+queue = queue[2:]
+print("Removed elements from the queue:", removed_elements)
+
+# Display the updated elements of the queue
+print("Updated elements of the queue:")
+for element in queue:
+    print(element)
+
 Q2
+
+
