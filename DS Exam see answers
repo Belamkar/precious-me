@@ -27,6 +27,27 @@ print("Updated elements of the queue:")
 for element in queue:
     print(element)
 
+
 Q2
+
+def linear_search(lst, target):
+    """
+    Perform a linear search on a list and return the index of the target element if found,
+    or -1 if not found.
+    """
+    for i in range(len(lst)):
+        if lst[i] == target:
+            return i
+    return -1
+
+# Example usage:
+lst = [5, 8, 10, 3, 2, 1]
+target = 10
+result = linear_search(lst, target)
+if result == -1:
+    print(f"{target} not found in list")
+else:
+    print(f"{target} found at index {result}")
+
 
 
