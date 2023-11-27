@@ -24,3 +24,57 @@ public class LeapYearChecker {
     }
 }
 
+
+Q2)
+import java.util.Scanner;
+
+public class Ring {
+    // Data Members
+    private int ringNumber;
+    private float radius;
+    private float area;
+
+    // Constructor to assign initial values to Ring Number and Radius
+    public Ring(int ringNumber, float radius) {
+        this.ringNumber = ringNumber;
+        this.radius = radius;
+        calculateArea();
+    }
+
+    // Function to allow the user to enter values of Ring Number and Radius
+    public void getArea() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Ring Number: ");
+        this.ringNumber = scanner.nextInt();
+
+        System.out.print("Enter Radius: ");
+        this.radius = scanner.nextFloat();
+
+        scanner.close();
+
+        calculateArea();
+    }
+
+    // Function to calculate and assign Area as 3.14 * Radius * Radius
+    private void calculateArea() {
+        this.area = 3.14f * this.radius * this.radius;
+    }
+
+    // Function to display all data members
+    public void display() {
+        System.out.println("Ring Number: " + ringNumber);
+        System.out.println("Radius: " + radius);
+        System.out.println("Area: " + area);
+    }
+
+    public static void main(String[] args) {
+        // Example usage of the Ring class
+        Ring ring = new Ring(1, 5.0f);
+        ring.display();
+
+        System.out.println("\nEnter new values:");
+        ring.getArea();
+        ring.display();
+    }
+}
