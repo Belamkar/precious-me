@@ -1,80 +1,24 @@
 Q1)
+
 import java.util.Scanner;
 
-public class LeapYearChecker {
-    public static void main(String[] args) {
-        // Create a Scanner object to read input from the user
-        Scanner scanner = new Scanner(System.in);
+class Library {
+    private String[] books;
+    private boolean[] available;
 
-        // Prompt the user to enter a year
-        System.out.print("Enter a year: ");
-
-        // Read the user's input as an integer
-        int year = scanner.nextInt();
-
-        // Check if the entered year is a leap year
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println(year + " is a leap year.");
-        } else {
-            System.out.println(year + " is not a leap year.");
-        }
-
-        // Close the Scanner to prevent resource leak
-        scanner.close();
-    }
-}
-
-
-Q2)
-import java.util.Scanner;
-
-public class Ring {
-    // Data Members
-    private int ringNumber;
-    private float radius;
-    private float area;
-
-    // Constructor to assign initial values to Ring Number and Radius
-    public Ring(int ringNumber, float radius) {
-        this.ringNumber = ringNumber;
-        this.radius = radius;
-        calculateArea();
+    public Library(int maxSize) {
+        books = new String[maxSize];
+        available = new boolean[maxSize];
     }
 
-    // Function to allow the user to enter values of Ring Number and Radius
-    public void getArea() {
-        Scanner scanner = new Scanner(System.in);
+              ................ ...............
 
-        System.out.print("Enter Ring Number: ");
-        this.ringNumber = scanner.nextInt();
 
-        System.out.print("Enter Radius: ");
-        this.radius = scanner.nextFloat();
-
-        scanner.close();
-
-        calculateArea();
-    }
-
-    // Function to calculate and assign Area as 3.14 * Radius * Radius
-    private void calculateArea() {
-        this.area = 3.14f * this.radius * this.radius;
-    }
-
-    // Function to display all data members
-    public void display() {
-        System.out.println("Ring Number: " + ringNumber);
-        System.out.println("Radius: " + radius);
-        System.out.println("Area: " + area);
-    }
-
-    public static void main(String[] args) {
-        // Example usage of the Ring class
-        Ring ring = new Ring(1, 5.0f);
-        ring.display();
-
-        System.out.println("\nEnter new values:");
-        ring.getArea();
-        ring.display();
-    }
-}
+public void addBook(String bookTitle) {
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] == null) {
+                books[i] = bookTitle;
+                available[i] = true;
+                System.out.println("Book added: " + bookTitle);
+                return;
+            }
