@@ -1,1 +1,272 @@
+(1)
 
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+ <title>Feedback Form</title>
+ </head>
+ <body>
+ <h2>My feedback form</h2>
+ <form action="/submit_feedback" method="post">
+ <ul>
+ <li>
+ <label for="name">Name:</label>
+ <input type="text" id="name" name="name"><br>
+ </li>
+ <li>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email"><br>
+ </li>
+ <li>
+ <label for="password">Password:</label>
+ <input type="password" id="password" name="password"><br>
+ </li>
+ <li>
+ <span>Please check all the emotions that apply to you:</span>
+ <ul>
+ <li>
+ <label for="angry">Angry</label>
+ <input type="checkbox" id="angry" name="emotion" value="angry"><br>
+ </li>
+ <li>
+ <label for="sad">Sad</label>
+ <input type="checkbox" id="sad" name="emotion" value="sad"><br>
+ </li>
+ <li>
+ <label for="happy">Happy</label>
+ <input type="checkbox" id="happy" name="emotion" value="happy"><br>
+ </li>
+ <li>
+ <label for="ambivalent">Ambivalent</label>
+ <input type="checkbox" id="ambivalent" name="emotion" value="ambivalent"><br>
+ </li>
+ </ul>
+ </li>
+<li>
+ <span>How satisfied were you with our service?</span>
+ <ul>
+ <li>
+ <label for="very_satisfied">Very satisfied</label>
+ <input type="radio" id="very_satisfied" name="satisfaction"
+ value="very_satisfied">
+ </li>
+ <li>
+ <label for="satisfied">Satisfied</label>
+ <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+ </li>
+ <li>
+ <label for="didnt_care">Didn't care</label>
+ <input type="radio" id="didnt_care" name="satisfaction" value="didnt_care">
+ </li>
+ <li>
+ <label for="dissatisfied">Dissatisfied</label>
+ <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+ </li>
+ <li>
+ <label for="very_dissatisfied">Very dissatisfied</label>
+ <input type="radio" id="very_dissatisfied" name="satisfaction"
+ value="very_dissatisfied">
+ </li>
+ </ul>
+ </li>
+ <li>
+ <label for="comments">Further comments:</label><br>
+ <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+ </li>
+ <li>
+ <label for="bio_photo">Bio photo:</label>
+ <input type="file" id="bio_photo" name="bio_photo"><br>
+ </li>
+ <li>
+ <label for="location_visited">Location visited:</label>
+ <select id="location_visited" name="location_visited">
+ <option value="">Select location</option>
+ <option value="location1">Location 1</option>
+ <option value="location2">Location 2</option>
+ <option value="location3">Location 3</option>
+ <!-- Add other locations as needed-->
+ </select><br>
+</li>
+ <li>
+ <input type="submit" value="Submit">
+ </li>
+ </ul>
+ </form>
+ </body>
+ </html             my feed back form
+
+(2)
+
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+ <style>
+ table, th, td {
+ border: 2px solid black;
+ }
+ th, td {
+ padding: 5px;
+ }
+ </style>
+ </head>
+ <body>
+ <h2>HTML Table</h2>
+ <table>
+ <tr>
+ <th>Question No.</th>
+ <th>Question</th>
+ <th>Answer</th>
+ <th>Marks per Answer</th>
+ <th>Total Marks</th>
+ </tr>
+ <tr>
+ <td rowspan="3">1</td>
+ <td rowspan="3">Name three features in a ROM</td>
+ <td>A</td>
+ <td rowspan="3">5</td>
+ <td rowspan="3">5</td>
+ </tr>
+ <tr>
+ <td>B</td>
+ </tr>
+ <tr>
+ <td>D</td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td>Here is a single answer</td>
+ <td>True</td>
+ <td>5</td>
+ <td>5</td>
+ </tr>
+ </table>
+ </body>
+ </html>
+write the html code to design the following
+
+
+(1)
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ </head>
+ <body>
+ <ol type="I">
+ <li>MS Office
+ <ol type="A">
+ <li>MS Word</li>
+ <li>MS Excel</li>
+ <li>MS Powerpoint</li>
+ <li>MS Access</li>
+ </ol>
+ </li>
+ <li>LibreOffice
+ <ol type="A">
+ <li>LibreOffice Writer</li>
+ <li>LibreOffice Calc</li>
+ <li>LibreOffice Impress
+ <ol type="i">
+ <li>Create Slides</li>
+ <li>Use Slide Transition</li>
+ <li>Use Animation</li>
+ <li>Slide Show</li>
+ </ol>
+ </li>
+ </ol>
+ </li>
+ <li>Computer Languages
+ <ol type="A">
+ <li>Low Level Language</li>
+ <li>High Level Language
+ <ol type="i">
+ <li>COBOL</li>
+ <li>FORTRAN</li>
+ <li>C</li>
+ <li>JAVA</li>
+ </ol>
+ </li>
+ </ol>
+ </li>
+ <li>Desktop Publishing
+ <ol type="A">
+ <li>Photoshop</li>
+ <li>CorelDraw</li>
+ <li>Page Maker</li>
+ </ol>
+ </li>
+ <li>Digital Marketing
+ <ol type="A">
+ <li>SEO</li>
+<li>SMO</li>
+ </ol>
+ </li>
+ </ol>
+ </body>
+ </html>
+write the html code to generate the following output
+
+
+(2)
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <title>Reservation Request</title>
+ </head>
+ <body>
+ <form action="/submit-reservation" method="post">
+ <fieldset>
+ <h2>Reservation Request</h2>
+ <fieldset>
+ <legend>General Information</legend>
+ <label for="arrival-date">Arrival date:</label>
+ <input type="date" id="arrival-date" name="arrival_date">
+ <span>Arrival date is invalid</span><br>
+ <label for="nights">Nights:</label>
+ <input type="number" id="nights" name="nights" min="1">
+ <span>Nights must be a number.</span><br>
+ <label for="adults">Adults:</label>
+ <input type="number" id="adults" name="adults" min="1"><br>
+ <label for="children">Children:</label>
+ <input type="number" id="children" name="children" min="0"><br>
+ </fieldset>
+ <fieldset>
+ <legend>Preferences</legend>
+ <label for="room-type">Room type:</label>
+ <input type="radio" id="standard" name="room_type" value="standard">
+ <label for="standard">Standard</label>
+ <input type="radio" id="business" name="room_type" value="business">
+ <label for="business">Business</label>
+ <input type="radio" id="suite" name="room_type" value="suite">
+ <label for="suite">Suite</label><br>
+ <label for="bed-type">Bed type:</label>
+ <input type="radio" id="king" name="bed_type" value="king">
+ <label for="king">King</label>
+ <input type="radio" id="double-double" name="bed_type" value="double-double">
+ <label for="double-double">Double Double</label><br>
+ <input type="checkbox" id="smoking" name="smoking">
+ <label for="smoking">Smoking</label><br>
+ </fieldset>
+ <fieldset>
+ <legend>Contact Information</legend>
+ <label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+ <span>Name is required</span><br>
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" required>
+ <span>Email address is invalid</span><br>
+ <label for="phone">Phone:</label>
+ <input type="tel" id="phone" name="phone" required>
+ <span>Phone number is invalid</span><br>
+ </fieldset>
+ <input type="submit" value="Submit Reservation">
+ <input type="reset" value="Clear">
+ </fieldset>
+ </form>
+ </body>
+ </html>     generate the following output of a form
